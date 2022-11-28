@@ -12,7 +12,7 @@ node *createnode(int data)
 {
     node *newnode = new node();
     newnode->data = data;
-    return newnode;
+       return newnode;
 }
 
 void traverse(node *head)
