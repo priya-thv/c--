@@ -1,7 +1,8 @@
 {
-    "files.associations": {
-        "*.tcc": "cpp",
-        "system_error": "cpp",
-        "regex": "cpp"
-    }
+  "files.associations": {
+    "*.tcc": "cpp",
+    "system_error": "cpp",
+    "regex": "cpp",
+    "iostream": "cpp"
+  }
 }

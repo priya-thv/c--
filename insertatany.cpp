@@ -23,20 +23,24 @@ void traverse(node*head){
 }
 
 void insertatany(node*prev_node,int data){
+    
     node*newnode=new node();
     newnode->data=data;
+    int t;
+    cin>>t;
     if(prev_node==NULL){
         prev_node=newnode;
     }else{
         newnode->next=prev_node->next;
         prev_node->next=newnode;
+        
 
     }
 }
 
 int main(){
     node*head=NULL;
-    node*temp;
+    node*temp=NULL;
     int r;
     cin>>r;
     for(int i=0;i<r;i++){
