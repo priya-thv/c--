@@ -22,12 +22,12 @@ int main(){
      cin>>target;
      float end=n-1;
     
-     cout<<"target is"<<target;
+     cout<<"target is: "<<target<<endl;
     
     while(start<=end){
         mid=(start+end)/2;
     
-        cout<<"the star is: "<<start;
+        cout<<"the start is: "<<start;
     
         cout<<" and end is: "<<end<<endl;
     
