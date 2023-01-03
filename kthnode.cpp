@@ -57,7 +57,15 @@ void printLinkedList(Node *head){
  * getSizeOfLinkedList will take head of linkedList in input and will return it's size
  * */
 int getSizeOfLinkedList(Node *head){
-	return 0;
+	
+    int size=0;
+	Node*ptr=head;
+    while(ptr!=NULL){
+        size++;
+        ptr=ptr->next;
+
+    }
+    return size;
 }
  
 /**
@@ -66,8 +74,15 @@ int getSizeOfLinkedList(Node *head){
  * */
  
 Node* getKthNodeOfLinkedList(Node *head, int k){
-	return head;
+	int count=1;
+	while(count!=k){
+		count++;
+		head=head->next;
+
+	}
+		return head;
 }
+
  
 int main() {
 	int n,k;
