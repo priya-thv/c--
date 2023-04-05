@@ -2,7 +2,7 @@
 using namespace std;
 
 struct Node
-{
+ {
     int data;
     Node *next;
 };
@@ -36,7 +36,7 @@ int main()
     int n; // LinkedList of Size N
     cin >> n;
 
-    Node *temp = NULL;
+    Node *tail = NULL;
     Node *head = NULL;
 
     for (int i = 0; i < n; i++)
@@ -47,13 +47,13 @@ int main()
         if (head == NULL)
         {
             head = createNode(val);
-            temp = head;
+            tail = head;
         }
         else
         {
             // temp is the end node of the linked list, new node will be next of temp
-            temp->next = createNode(val);
-            temp = temp->next;
+            tail->next = createNode(val);
+            tail = tail->next;
         }
     }
 

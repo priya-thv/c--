@@ -40,9 +40,15 @@ class Queue{
 	}
 	
 	bool isEmpty(){
-		if
-		cout<<"returning if the queue is empty\n";
-		 return true;
+	if (end == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+        	
 	}
 };
 
